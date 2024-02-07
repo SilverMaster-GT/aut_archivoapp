@@ -6,7 +6,7 @@ from decouple import config
 class systemRRHH:
     def __init__(self):
         self.conn_str = (
-            f'DRIVER={{SQL Server}};'
+            f'DRIVER={{ODBC Driver 17 for SQL Server}};'
             f'SERVER={config("DB_HOST")};'
             f'DATABASE={config("DB_DATABASE")};'
             f'UID={config("DB_USERNAME")};'
